@@ -10,7 +10,7 @@
 
 :root {
     --primary: #171329;
-    --secondary: #E76080;
+    --secondary: #A41637;
     --tertiary: #3E439F;
 }
 
@@ -575,7 +575,7 @@ ul li a {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./image/bg2.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/bg2.jpg);
         background-size: cover;
     }
 
