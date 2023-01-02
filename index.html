@@ -12,12 +12,22 @@
 </head>
 
 <body>
-    <nav>
+    <div class="navigationbar">
+        <div class="brand">
+            <h2 class="brand_name">ReHouse</h2>
+        </div>
+        <button class="openbutton" onclick="openNav()">☰</button>
+    </div>
+
+    <nav id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
         <div class="brand">
             <h2 class="brand_name">ReHouse</h2>
         </div>
         <div class="menu">
             <ul>
+
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Resources</a></li>
                 <li><a href="/">Explore</a></li>
@@ -30,6 +40,7 @@
             <button class="btn btn_singup">Sign up</button>
         </div>
     </nav>
+
 
     <div class="front">
         <div class="content-box">
@@ -275,16 +286,31 @@
             <h2>Contact Information</h2>
             <ul>
                 <li>
-                    <p> +91 8517014691</p>
+                    <p> +91 0000000000</p>
                 </li>
                 <li>
-                    <p> 5060vishalkumar@gmail.com</p>
+                    <p> xyz@gmail.com</p>
                 </li>
             </ul>
         </div>
     </footer>
 
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "100%";
+          document.getElementById("mySidepanel").style.transform = "translateX(0)";
+          document.getElementById("mySidepanel").style.opacity = "1";
 
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0%";
+          document.getElementById("mySidepanel").style.transform = "translateX(-100%)";
+          document.getElementById("mySidepanel").style.opacity = "0";
+          
+
+        }
+        </script>
 </body>
 
 </html>
