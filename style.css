@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --primary: #171329;
+    --secondary: #E76080;
+    --tertiary: #3E439F;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand .brand_name {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.user-box .btn {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.user-box .btn_signin {
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.user-box .btn_singup {
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    border-radius: 7px;
+}
+
+
+.front {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./image/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.header_desc {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.front .btn {
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.box-btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.hero {
+    margin: 20vh auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image {
+    width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero_content {
+    width: 40%;
+}
+
+
+
+
+.hero_content .hero_header {
+    font-size: 35px;
+}
+
+.hero_content .hero_header .hero_special {
+    color: var(--tertiary);
+}
+
+.hero_content ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero_content ul li box-icon {
+    margin: 0 10px;
+    color: var(--tertiary);
+}
+
+
+.card-section {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.card_header {
+    text-align: center;
+    font-size: 40px;
+}
+
+.card_para {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-box {
+    margin: 10vh auto;
+    display: grid;
+    grid-gap: 40px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+    border-radius: 20px;
+}
+
+
+.card-body {
+    padding: 10px 10px;
+}
+
+.card .msg_btn {
+    padding: 5px 10px;
+    background-color: var(--secondary);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-features ul {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-features ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.card .btn_card {
+    padding: 5px 10px;
+    background-color: var(--tertiary);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.service-section {
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.service-section .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-section .card i {
+    font-size: 72px;
+    color: var(--tertiary);
+}
+
+.service-section .service_name {
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-section .card p {
+    margin: 0px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(223, 218, 218);
+    padding: 50px 70px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.menu-information,
+.menu-helpful,
+.contact,
+ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.menu-information,
+.menu-helpful,
+.contact,
+h2{
+    color: #000;
+}
+
+.menu-information,
+.menu-helpful,
+.contact,
+ul li a {
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+    font-size: 16px;
+}
+
+.social {
+    margin: 20px 0;
+}
+
+.social h4 {
+    margin: 10px 0;
+}
+
+.social .fa-facebook {
+    color: #2c0db8;
+}
+
+.social .fa-instagram {
+    color: #b8270d;
+}
+
+.social .fa-twitter {
+    color: #4e9fce;
+}
+
+.social i {
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.Blogs {
+    margin: 20vh auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Blogs-image {
+    width: 40%;
+}
+
+.Blogs-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Blogs-content {
+    width: 40%;
+}
+
+.Blogs-content .blog-card {
+    width: 250px;
+}
+
+.Blogs-content .blog-card img {
+    width: 100%;
+}
+
+
+.choose {
+    margin: 20vh auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose-image {
+    width: 40%;
+}
+
+.choose-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.choose_content {
+    width: 40%;
+}
+
+.choose_content .choose_header {
+    font-size: 55px;
+}
+
+.choose_content .choose_header .hero_special {
+    color: var(--secondary);
+}
+
+.choose_content .btn_choose {
+    margin: 50px 0;
+    padding: 8px 24px;
+    background-color: var(--secondary);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.video_section {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./image/bg2.jpg');
+    background-size: cover;
+}
+
+.video_section i {
+    font-size: 70px;
+    color: white;
+}
+
+
+.blog-section {
+    width: 80%;
+    margin: 20vh auto;
+}
+
+.blog-section .card_header {
+    color: var(--secondary);
+}
+
+.blog-section .card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.blog-section .card h2 {
+    font-size: 18px;
+    margin: 5px auto;
+}
+
+.blog-section .card p {
+    font-size: 14px;
+}
+
+
+.blog-section .card .btn_blog {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: var(--tertiary);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:600px) {
+    .header_content {
+        color: #fff;
+        font-size: 31px;
+        text-align: center;
+    }
+
+    .hero {
+        margin: 10vh auto;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+
+    }
+
+    .hero_content {
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    .hero_content .hero_header {
+        font-size: 24px;
+    }
+
+    .card_header {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .card_para {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .card-box {
+        margin: 5vh auto;
+        display: grid;
+        grid-gap: 20px 30px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .video_section {
+        width: 90%;
+        height: 28vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./image/bg2.jpg);
+        background-size: cover;
+    }
+
+    .video_section i {
+        font-size: 40px;
+        color: white;
+    }
+
+    .blog-section {
+        width: 90%;
+        margin: 10vh auto;
+    }
+
+    .blog-section .card_header {
+        color: var(--secondary);
+        font-size: 30px;
+    }
+
+    .choose {
+        margin: 0vh auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .choose_content {
+        width: 100%;
+    }
+
+    .choose-image {
+        width: 100%;
+    }
+
+    .choose_content .choose_header {
+        font-size: 35px;
+    }
+}
